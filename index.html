@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Assignment-Five</title>
+    <!-- Google Fonts CDN added here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts CDN added here -->
+    <!-- Tailwind css CDN added here -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Tailwind css CDN added here -->
+    <!-- Tailwind Custom css here -->
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #3752FD;
+          --color-secondary: #F4F7FF;
+          --color-tcolor: #00303C;
+          --font-popins: Poppins, sans-serif
+        }
+      </style>
+    <!-- Tailwind Custom css here -->
+</head>
+<body class="font-popins bg-secondary">
+    <header class="container mx-auto">
+        <nav class="flex items-center justify-between bg-white rounded-2xl px-6 py-[18px] mt-6 mb-5">
+            <div class="flex items-center gap-x-3 ">
+                    <img class="w-[51px]" src="assets/logo.png" alt="logo">
+                    <h2 class="text-4xl font-light text-tcolor">Dev <span class="font-bold">Board</span></h2>
+            </div>
+            <div class="flex items-center gap-x-[38px] ">
+                <div class="flex items-center py-3 px-6 bg-secondary gap-x-4 rounded-[32px]">
+                    <img class="w-[32px]" src="assets/checkbox.png" alt="checkbox">
+                    <h2 id="task_total" class="font-bold text-[32px] text-[#1E1E1E] ">23</h2>
+                </div>
+                <div id="thim_change" class="p-3 bg-secondary rounded-full">
+                    <img class="w-[40px] cursor-pointer" src="assets/theme-btn.png" alt="theme-btn">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto lg:grid grid-cols-12 gap-x-6 mb-[60px]">
+        <section class="col-span-9 bg-white rounded-2xl">
+            <div class="lg:grid grid-cols-4 gap-x-6 border-b-[#3751fd33] border-b border-dashed px-6 pt-6 pb-8 ">
+                <div class="col-span-1 flex gap-x-5 items-center p-6 bg-secondary rounded-xl">
+                    <div class="bg-white p-[18px] rounded-full "><img class="w-7" src="assets/checkbox.png" alt=""></div>
+                    <div class="">
+                        <h4>Task Assigned</h4>
+                        <h2 id="cart_length" class="font-bold text-[32px] text-[#1E1E1E] ">0 </h2>
+                    </div>
+                </div>
+                <div class="col-span-2 flex items-center gap-x-[22px] bg-gradient-to-r from-[#3752FD] from-0% via-[#6C7FFA] via-53% to-[#9BA8F8] to-100% rounded-xl py-[22px] pl-[40px] ">
+                    <img src="assets/board.png" alt="">
+                    <h3>Discover Something New Today!</h3>
+                </div>
+                <div class="col-span-1 flex gap-x-5 items-center p-6 bg-secondary rounded-xl">
+                    <div class="bg-white p-[18px] rounded-full "><img class="w-7" src="assets/calender.png" alt=""></div>
+                    <div class="">
+                        <h4>Wed ,</h4>
+                        <h2 class="font-bold text-[22px] text-[#1E1E1E] ">Jul 28 2025  </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-8 grid lg:grid-cols-3 grid-cols-2 gap-9">
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Fix Mobile Button Issue </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button id="cartbutton" class="cart_button font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block
+                         text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Add Dark Mode  </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button class="cart_button font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Optimize  Home page  </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button class="cart_button font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Add new emoji 🤲 </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button class="cart_button font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Integrate OpenAI API  </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button class="cart_button font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_cart bg-secondary rounded-2xl px-6 pt-6 pb-5">
+                    <div class="border-b-[#3751fd33] border-b border-dashed">
+                        <h4 class="text-base inline-block text-tcolor bg-white rounded-lg py-2 px-4">ShopEase</h4>
+                        <h2 class="title py-4 font-medium text-tcolor text-2xl">Improve Job searching  </h2>
+                        <div class="p-4 bg-white rounded-lg mb-[14px]">
+                            <p class="text-base font-light ">Debug using Chrome DevTools, check for overlapping elements, and ensure </p>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between pt-[13px]">
+                        <div class="">
+                            <p>Deadline</p>
+                            <h5>21 March 2025</h5>
+                        </div>
+                        <div class="">
+                            <button class="cart_button onetow font-medium text-base  text-white bg-primary rounded-lg py-[10px] px-5 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section class="col-span-3 bg-white rounded-2xl ">
+            <div class="flex flex-col items-center border-b-[#3751fd33] border-b border-dashed pb-[14px] pt-6">
+            <div class="flex items-center gap-x-[17px] mb-[15px]">
+                <img src="assets/activity.png" alt="">
+                <h2>Activity Log</h2>
+            </div>
+      
+                <button id="clear_history" class="font-medium text-base text-white py-[10px] px-[20px] rounded-lg bg-primary cursor-pointer">Clear History</button>
+            </div>
+            <div class="pb-6 pt-[25px] pl-[31px] pr-[17px]">
+                <div id="history" class="text-red-500">
+                    <h2 class="text-base"></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/app.js"></script>
+</body>
+</html>
