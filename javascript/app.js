@@ -5,10 +5,9 @@ const thimChange = document.getElementById("thim_change").addEventListener("clic
 })
 // This code for Random background color changes 
 // This code for current day, date, month, and year
-const currentDate = new Date();
-const dateConvert = currentDate.toDateString()
-const dayName = dateConvert.split(' ')[0]
-const monthYear = dateConvert.split(' ').slice(1).join(' ')
+const currentDate = new Date().toDateString();
+const dayName = currentDate.split(' ')[0]
+const monthYear = currentDate.split(' ').slice(1).join(' ')
 document.getElementById('day_name').innerText = dayName + ' ,';
 document.getElementById('year_month').innerText = monthYear;
 // This code for current day, date, month, and year
@@ -22,9 +21,9 @@ for (const myCart of allCart) {
     for (const button of buttons) {
         button.addEventListener('click', function() {
             alert("Board Updated Successfully")
+            const time = new Date().toLocaleTimeString();
             const title = myCart.querySelector('.title').innerHTML;
             const div = document.getElementById("history")
-            const time = new Date().toLocaleTimeString();
             const titile = document.createElement("h2")
             titile.innerHTML = `You have Complete The Task ${title} at ${time}`
             titile.classList.add('p-[10px]', 'bg-secondary', 'text-[#494a4d]', 'text-base', 'mb-7')
